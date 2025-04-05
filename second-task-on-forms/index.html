@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form part 2</title>
+</head>
+
+<body>
+    <form>
+        <h2>Form with checkbox</h2>
+
+        <input type="checkbox" id="bca" name="course_subject" value="BCA">
+        <label for="bca">BCA</label><br>
+        <input type="checkbox" id="bba" name="course_subject" value="BBA">
+        <label for="bba">BBA</label><br>
+        <input type="checkbox" id="b.com" name="course_subject" value="B.COM">
+        <label for="b.com"> B.COM</label><br>
+
+
+        <h2>Enter text feedback</h2>
+
+        <label for="anything">Enter your feedback</label><br>
+        <input type="textarea" id="anything" name="anything">
+        <button type="submit">submit</button>
+
+
+        <h2>Textarea longer response</h2>
+
+        <label for="feedback">Comment</label><br>
+        <textarea id="feedback" name="feedback" rows="7" cols="50">
+</textarea>
+        <button type="submit">submit</button>
+
+
+        <h2>dropdown menu</h2>
+
+
+        <select name="course">
+            <option value="b.com">b.com</option>
+            <option value="bba">bba</option>
+            <option value="bca">bca</option>
+        </select>
+
+
+        <h2>Radio button form to select course</h2>
+
+        <input type="radio" id="bca" name="flyy" value="BCA">
+        <label for="bca">BCA</label><br>
+        <input type="radio" id="b.com" name="flyy" value="B.COM">
+        <label for="b.com">B.COM</label><br>
+        <input type="radio" id="bba" name="flyy" value="BBA">
+        <label for="bba">BBA</label>
+
+        <br>
+        <h2>Rate your experience</h2>
+        <label for="rating">rate your experience [0 to 5]</label><br>
+        <input type="range" name="range" id="rating" min="0" max="5"><br>
+    </form>
+</body>
+
+</html>
