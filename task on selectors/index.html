@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(100, 100, 170);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .input-area {
+            border-radius: 25px;
+            background-color: aliceblue;
+            text-align: left;
+        }
+
+        #login-form {
+            color: white;
+            font-size: 20px;
+        }
+
+        h1,
+        button {
+            background-color: bisque;
+            font-size: 30px;
+            border-radius: 12px;
+        }
+
+        h1::first-letter {
+            font-size: 34px;
+        }
+
+        button:hover {
+            background-color: green;
+
+        }
+
+        button {
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>login page</h1>
+    <form id="login-form">
+        <div>
+            <label for="usename">Enter user name</label>
+            <input type="text" id="username" class="input-area"><br><br>
+        </div>
+        <div><label for="password">Enter password </label>
+            <input type="text" id="password" class="input-area">
+        </div><br>
+        <div>
+            <button type="submit">login</button>
+        </div>
+    </form>
+</body>
+
+</html>
