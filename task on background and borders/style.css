@@ -1,0 +1,38 @@
+* {
+    color: azure;
+    font-style: italic;
+
+}
+
+body {
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Beautiful-Plain-Website-Background.jpg");
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.border1 {
+    border: 2px solid white;
+    border-radius: 6px;
+    background shadow: 3px white;
+}
+
+.border2 {
+    border: 2px dotted;
+    border-radius: 6px;
+}
+
+.border3 {
+    border: 2px dashed;
+    border-radius: 6px;
+}
+
+.border4 {
+    border: 2px double;
+    border-radius: 6px;
+}
+
+#hover:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px white;
+
+}
