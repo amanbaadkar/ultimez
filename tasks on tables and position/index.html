@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table and position</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        #table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        #table td,
+        table th {
+            border: 2px solid rgb(118, 74, 74);
+            padding: 15px;
+            height: 35px;
+            vertical-align: bottom;
+        }
+
+        #table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #table tr:hover {
+            background-color: rgb(171, 164, 164);
+        }
+
+        div.static {
+            position: static;
+            border: 1px solid black;
+        }
+
+        div.relative {
+            position: relative;
+            left: 10px;
+            border: 1px solid black;
+        }
+
+        div.fixed {
+            position: fixed;
+            width: 300px;
+            bottom: 0px;
+            right: 0px;
+            border: 1px solid black;
+        }
+
+        div.absolute_ancestor {
+            position: relative;
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+
+        }
+
+        div.absolute {
+            padding: absolute;
+            top: 80px;
+            right: 0px;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            padding: 5px;
+            top: 0px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="overflow-x: auto;">
+        <table id="table">
+            <tr>
+                <th>head1</th>
+                <th>head2</th>
+                <th>head3</th>
+                <th>extra</th>
+                <th>extra</th>
+                <th>extra</th>
+                <th>extra</th>
+                <th>extra</th>
+                <th>extra</th>
+            </tr>
+            <tr>
+                <td>alex</td>
+                <td>druvin</td>
+                <td>solo</td>
+            </tr>
+
+            <tr>
+                <td>solo</td>
+                <td>alex</td>
+                <td>druvin</td>
+
+            </tr>
+            <tr>
+                <td>alex</td>
+                <td>roni</td>
+                <td>sharma</td>
+
+            </tr>
+            <tr>
+                <td>saket</td>
+                <td>amir</td>
+                <td>rajat</td>
+            </tr>
+    </div>
+    </table>
+    <h1>postion properties</h1>
+    <div class="static">
+        <p>This is a para inside a div for position static example</p>
+    </div>
+    <h1>postion properties2</h1>
+    <div class="relative">
+        <p>This is a para inside a div for position relative example</p>
+    </div>
+    <h1>postion properties3</h1>
+    <div class="fixed">
+        <p>This is a para inside a div for position fixed example</p>
+    </div>
+    <h1>postion properties4</h1>
+    <div class="absolute_ancestor">
+        <p>This is a para inside a div for position absolute ancestor example</p>
+        <div class="absolute">this is inside absolute ancestor</div>
+    </div>
+    <h1>postion properties5</h1>
+    <div class="sticky">this exmple for stucky</div>
+    <p style="padding bottom: 800px;font-size:50px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+        at cum perspiciatis molestiae laudantium recusandae eligendi sequi? Illo, laborum. Impedit nostrum voluptatem
+        iusto vel aliquid perspiciatis dignissimos sequi excepturi quisquam.</p>
+</body>
+
+</html>
