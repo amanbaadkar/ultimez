@@ -40,6 +40,9 @@
             background-color: rgb(171, 164, 164);
         }
 
+
+
+
         div.static {
             position: static;
             border: 1px solid black;
@@ -56,7 +59,8 @@
             width: 300px;
             bottom: 0px;
             right: 0px;
-            border: 1px solid black;
+            border: 3px solid black;
+
         }
 
         div.absolute_ancestor {
@@ -76,13 +80,24 @@
             border: 1px solid black;
         }
 
-        div.sticky {
-            position: -webkit-sticky;
+        div.header {
+
             position: sticky;
-            padding: 5px;
             top: 0px;
             background-color: aquamarine;
             border: 1px solid black;
+            width: 100px;
+            margin-left: 300px;
+        }
+
+        .footer {
+            position: sticky;
+            bottom: 0;
+            width: 100px;
+            background-color: aqua;
+            border: 3px solid black;
+            margin-left: 300px;
+
         }
     </style>
 </head>
@@ -126,6 +141,14 @@
             </tr>
     </div>
     </table>
+    <div id="sideBar">
+        <ul>
+            <li>This is a fixed sidebar</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+    </div>
     <h1>postion properties</h1>
     <div class="static">
         <p>This is a para inside a div for position static example</p>
@@ -137,17 +160,65 @@
     <h1>postion properties3</h1>
     <div class="fixed">
         <p>This is a para inside a div for position fixed example</p>
+        <ul>
+            <li>This is a fixed sidebar</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
     </div>
     <h1>postion properties4</h1>
     <div class="absolute_ancestor">
         <p>This is a para inside a div for position absolute ancestor example</p>
         <div class="absolute">this is inside absolute ancestor</div>
     </div>
-    <h1>postion properties5</h1>
-    <div class="sticky">this exmple for stucky</div>
-    <p style="padding bottom: 800px;font-size:50px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        at cum perspiciatis molestiae laudantium recusandae eligendi sequi? Illo, laborum. Impedit nostrum voluptatem
-        iusto vel aliquid perspiciatis dignissimos sequi excepturi quisquam.</p>
+    <h1>postion properties5 header</h1>
+    <div class="header">
+        <p>this is example for sticky</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, debitis tempora? Excepturi deserunt quis
+        amet ab asperiores, consectetur nihil cupiditate sunt rem, reiciendis aliquid tempore harum sequi voluptas
+        labore eligendi minima corrupti sint ex quos error natus! Consequatur earum fugit deleniti eaque, similique est
+        voluptatem quod rerum eum veniam illo natus incidunt laudantium non! Quidem, autem. Quisquam consectetur,
+        maiores qui debitis repudiandae error deserunt nemo, id corrupti, iusto quia? Ratione, aspernatur ad. Amet
+        tenetur perferendis hic porro illo voluptates expedita odit neque, cumque temporibus autem eligendi accusamus
+        aut ipsum delectus vel impedit quo cupiditate minima mollitia distinctio fugit quod incidunt! Dignissimos sunt
+        voluptatem mollitia at quam quae nam? Omnis quo quod, sapiente sunt natus laborum voluptatibus debitis, rerum
+        voluptates voluptate soluta autem quam eveniet! Culpa alias praesentium quas, assumenda fugiat facilis. Ea vel
+        adipisci distinctio excepturi, molestias fugit sit modi. Temporibus excepturi culpa sint dolorem alias, ad
+        architecto. Ipsa atque amet, facere eum totam nisi placeat beatae! Quo exercitationem nisi quia eveniet corrupti
+        nam nemo ad sed nobis quae, sapiente illum alias quisquam maiores, tempore atque. Voluptatem repudiandae in
+        magni asperiores? Eaque repellendus ut dolor! Aspernatur esse harum laudantium vel impedit illum voluptates
+        reiciendis, quas ipsa facilis distinctio corporis consequatur alias neque eius quis nesciunt adipisci dolorem.
+        Expedita, maxime illo laborum aperiam rem, nesciunt aliquid minima, excepturi repellat deserunt dolorum pariatur
+        suscipit non. Est officia minus voluptatibus quo praesentium consequuntur, aspernatur soluta doloremque, odit
+        dolor eius at voluptates reprehenderit nostrum ipsa vitae molestiae atque laudantium veritatis. Aliquam ullam
+        reiciendis non commodi minima magnam quidem repellendus aut earum, aspernatur vero minus reprehenderit doloribus
+        incidunt, architecto sequi? Perspiciatis, ullam facere? Optio omnis sunt provident non perspiciatis, fugiat
+        molestiae maxime laudantium asperiores quam deleniti molestias animi veritatis aliquam magni nobis natus ipsa
+        reprehenderit cupiditate labore ab quo! Laborum voluptatibus unde repellendus ex quas porro veniam delectus
+        minima magni id, voluptas tenetur voluptatem adipisci necessitatibus doloribus cumque consequuntur debitis quasi
+        dolor numquam aliquam odit, dignissimos quae? Accusantium eos asperiores quisquam blanditiis explicabo voluptate
+        rerum eius voluptas optio! Praesentium magnam porro delectus et laborum quas nisi ab aperiam accusamus, sapiente
+        unde minus corporis earum illo quasi veniam quisquam numquam repellendus eaque accusantium perferendis rem atque
+        asperiores? Amet et nisi, magni aspernatur quibusdam pariatur optio ipsa quae? Iusto ipsum expedita voluptate
+        quisquam, reiciendis ut. Veniam ex laudantium sapiente recusandae ipsam harum est, nesciunt quidem porro
+        assumenda repellat architecto iste a atque sint fuga aspernatur maxime accusantium totam aliquid asperiores
+        officiis, consequatur enim. Debitis, et possimus! Rem officiis vero qui sapiente aliquid saepe iusto inventore
+        mollitia, cupiditate illum facere ex praesentium! Soluta eum similique delectus suscipit explicabo est
+        laboriosam harum ipsam quis non, et tenetur sint sed quas aspernatur illum laudantium perspiciatis obcaecati ex
+        amet optio animi. Voluptatum officia eveniet assumenda laboriosam repudiandae nobis facilis unde natus doloribus
+        asperiores enim dolores necessitatibus, ex cum ea sed voluptatibus reiciendis placeat nostrum praesentium?
+        Blanditiis doloribus sequi dicta corporis voluptatem culpa, aliquam qui odit nobis inventore ut aut dolores
+        eaque. Eaque, maiores veniam dolores distinctio sapiente incidunt dolorem reprehenderit libero!
+        rerum hic.
+    </p>
+    </div>
+    <div class="footer">
+        <p> this is footer</p>
+    </div>
+
 </body>
 
 </html>
